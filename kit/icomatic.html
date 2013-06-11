@@ -145,10 +145,19 @@
     .close-button {
         display: none !important;
     }
+    .title:before {
+        width: 75px;
+        height: 75px;
+        content: ' ';
+        background: url('http://www.icomatic.io/page_files/images/logo_icomatic.png');
+        background-size: contain;
+        vertical-align: middle;
+        display: inline-block;
+    }
 </style>
 </head>
 <body>
-<h1>Ligature Icon Font</h1>
+<h1 class='title'>Icon Font Samples</h1>
 Try typing one of your icon ligatures in the area below.
 eg alert
 <div contenteditable class='icomatic demo'></div>
