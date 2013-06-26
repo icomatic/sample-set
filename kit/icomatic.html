@@ -5,12 +5,25 @@
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
 <script src='icomatic.js'></script>
 <style>
+    html { height: 100%; }
     body {
         font-family: "Source Sans Pro", Arial, sans-serif;
+        position: relative;
         font-weight: 300;
         color: #454545;
-        margin: 60px;
+        padding: 60px;
+        min-height: 100%;
+        box-sizing: border-box; -moz-box-sizing: border-box;
+        margin: 0;
          -webkit-font-smoothing: antialiased;             
+    }
+
+    .footer {
+        height: 2em;
+        line-height: 2em;
+        text-align: center;
+        position: absolute;
+        left: 0; bottom: 0; right: 0;
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -615,6 +628,14 @@ Using an icon font is simple. Just include the stylesheet, and the icon class to
 ...
 &lt;span class='icomatic' style='color:blue'&gt;alert&lt;/span&gt;
 </pre></code>
+
+<div class='footer'>
+    <a href="icomatic.io">icomatic.io</a> |
+    <a href="icomatic.io/faq.html">FAQ</a> |
+    <a href="icomatic.io/privacy.html">Privacy Policy</a> |
+    <a href="https://twitter.com/icomatic">@icomatic</a> |
+    &copy; Copyright 2013 Icomatic. All rights reserved.
+</div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <!-- DatGUI -->
