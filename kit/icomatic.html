@@ -1,7 +1,7 @@
 <html>
 <head>
 <link rel='stylesheet' type='text/css' href='icomatic.css' />
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
 <script src='icomatic.js'></script>
 <style>
@@ -56,7 +56,7 @@
         border-radius: 3px;
         float: left;
         margin: 0 0 10px 10px;
-        min-width: 6em;
+        width: 6em;
         padding: 30px;
         text-align: center;
     }
@@ -68,9 +68,11 @@
         text-align: center;
     }
 
-    .label {
+    .icons .icon-label {
         font-size: 1em;
-        width: 
+        word-wrap: normal;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
             
     pre {
@@ -145,19 +147,23 @@
     .close-button {
         display: none !important;
     }
-    .title:before {
+    .title img {
         width: 75px;
         height: 75px;
-        content: ' ';
-        background: url('http://www.icomatic.io/page_files/images/logo_icomatic.png');
-        background-size: contain;
         vertical-align: middle;
-        display: inline-block;
+    }
+    .title a {
+        text-decoration: none;
     }
 </style>
 </head>
 <body>
-<h1 class='title'>Icon Font Samples</h1>
+<h1 class='title'>
+    <a href='icomatic.io'>
+        <img src='http://www.icomatic.io/page_files/images/logo_icomatic.png' alt='Icomatic' />
+    </a>
+    Icon Font Samples
+</h1>
 Try typing one of your icon ligatures in the area below.
 eg alert
 <div contenteditable class='icomatic demo'></div>
