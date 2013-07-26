@@ -27,11 +27,11 @@ substitute: function(el) {
 run: function(force) {
     force = typeof force !== 'undefined' ? force : false;
     var s = getComputedStyle(document.body);
-    if (s.hasOwnProperty('webkitFontFeatureSettings')
-        || s.hasOwnProperty('mozFontFeatureSettings')
-        || s.hasOwnProperty('msFontFeatureSettings')
-        || s.hasOwnProperty('oFontFeatureSettings')
-        || s.hasOwnProperty('fontFeatureSettings'))
+    if (('WebkitFontFeatureSettings' in s)
+        || ('MozFontFeatureSettings' in s)
+        || ('MsFontFeatureSettings' in s)
+        || ('OFontFeatureSettings' in s)
+        || ('fontFeatureSettings' in s))
         if (!force)
             return;
     var els = document.querySelectorAll('.icomatic');
